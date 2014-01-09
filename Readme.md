@@ -3,6 +3,8 @@
 
   [bunyan](https://github.com/trentm/node-bunyan) logger working with ENV vars.
 
+[![Build Status](https://travis-ci.org/stephenmathieson/node-bunyan-env.png?branch=master)](https://travis-ci.org/stephenmathieson/node-bunyan-env)
+
 ## Installation
 
     $ npm install bunyan-env
