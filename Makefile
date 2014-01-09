@@ -31,4 +31,6 @@ node_modules:
 clean:
 	rm -rf lib-cov node_modules *.log
 
+travis: test test-acceptance
+
 .PHONY: test test-acceptance $(ACCEPTANCE) clean
