@@ -99,8 +99,8 @@ describe('bunyan-env', function () {
         var foo = require('..')({
           name: 'foo',
           stream: stream(function (data) {
-            assert(30 == data.level);
-            assert('hello from foo' == data.msg);
+            assert(30 === data.level);
+            assert('hello from foo' === data.msg);
             fooLogged = true;
           })
         });
@@ -108,8 +108,8 @@ describe('bunyan-env', function () {
         var bar = require('..')({
           name: 'bar',
           stream: stream(function (data) {
-            assert(30 == data.level);
-            assert('hello from bar' == data.msg);
+            assert(30 === data.level);
+            assert('hello from bar' === data.msg);
             barLogged = true;
           })
         });
@@ -142,7 +142,7 @@ describe('bunyan-env', function () {
         test('fatal');
 
         setTimeout(function () {
-          assert(wrote == index);
+          assert(wrote === index);
           done();
         }, 300);
 
@@ -153,8 +153,8 @@ describe('bunyan-env', function () {
             name: name,
             stream: stream(function (data) {
               var num = bunyan.resolveLevel(level);
-              assert(num == data.level);
-              assert(level + ' from ' + name == data.msg);
+              assert(num === data.level);
+              assert(level + ' from ' + name === data.msg);
               wrote++;
             })
           });
@@ -177,8 +177,8 @@ describe('bunyan-env', function () {
       it('should load config from "./config.json"', function () {
         process.env.BUNYAN_CONFIG = config;
         var bunyan = require('..');
-        assert(30 == bunyan.level);
-        assert(3 == bunyan.enabled.length);
+        assert(30 === bunyan.level);
+        assert(3 === bunyan.enabled.length);
         assert(bunyan.enabled[0].test('foo'));
         assert(bunyan.enabled[1].test('bar'));
         assert(bunyan.enabled[2].test('baz'));
