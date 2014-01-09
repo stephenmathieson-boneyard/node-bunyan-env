@@ -1,6 +1,6 @@
 {
   "name": "bunyan-env",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Bunyan logger working with ENV vars",
   "keywords": [
     "bunyan",
