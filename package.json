@@ -1,0 +1,31 @@
+{
+  "name": "bunyan-env",
+  "version": "0.0.0",
+  "description": "Bunyan logger working with ENV vars",
+  "keywords": [
+    "bunyan",
+    "logger",
+    "environment"
+  ],
+  "author": "Stephen Mathieson <me@stephenmathieson.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stephenmathieson/node-bunyan-env.git"
+  },
+  "dependencies": {
+    "bunyan": "~0.22.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "better-assert": "~1.0.0"
+  },
+  "main": "index",
+  "bugs": {
+    "url": "https://github.com/stephenmathieson/node-bunyan-env/issues"
+  },
+  "homepage": "https://github.com/stephenmathieson/node-bunyan-env",
+  "scripts": {
+    "test": "make test"
+  },
+  "license": "MIT"
+}
